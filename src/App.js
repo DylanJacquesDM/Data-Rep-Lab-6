@@ -9,6 +9,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Nav, Navbar} from 'react-bootstrap';
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { Create } from './components/create';
+import { Read } from './components/read';
 
 //Component Class
 class App extends Component {
@@ -31,8 +33,8 @@ class App extends Component {
         <Switch>
           <Route path='/' component={Content} exact/>
           <Route path='/home' component={Content} exact/>
-          <Route path='/read' component={Header} exact/>
-          <Route path='/create' component={Footer} exact/>
+          <Route path='/read' component={Read} exact/>
+          <Route path='/create' component={Create} exact/>
         </Switch>
 
         
